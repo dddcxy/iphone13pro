@@ -1,0 +1,14 @@
+# Ignore artifacts:
+/node_modules
+/dist
+/src/lib/
+
+/.vscode
+.eslintrc.js
+package.json
+package-lock.json
+/build/
+/config/
+/dist/
+/*.js
+commitlint.config,js
