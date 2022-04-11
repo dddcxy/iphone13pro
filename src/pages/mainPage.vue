@@ -31,7 +31,7 @@
       </template>
     </piano-piece>
     <phone-camera></phone-camera>
-    <div style="height:300px;width:100%;background-color:#000"></div>
+    <night-mode></night-mode>
   </div>
 </template>
 
@@ -54,6 +54,8 @@ import changeColor from '@/components/pianoPiecePart/changeColor'
 import largeColor from '@/components/pianoPiecePart/largeColor'
 // 手机摄像头介绍展示
 import phoneCamera from '@/components/phoneCamera'
+// 夜间模式特性
+import nightMode from '@/components/nightMode'
 export default {
   components: {
     navItem,
@@ -64,7 +66,8 @@ export default {
     pianoPiece,
     changeColor,
     largeColor,
-    phoneCamera
+    phoneCamera,
+    nightMode
   }
 }
 </script>
