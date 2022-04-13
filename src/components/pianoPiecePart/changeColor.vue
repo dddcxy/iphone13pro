@@ -87,13 +87,13 @@ export default {
   // 执行内容
   // 类名参数要加大括号@{index}
   // 根据index获取对应的某个值 extract(数组名, 对应的序号)
-  .changeBtn:nth-of-type(@{index}) {
+  .changeBtn:nth-child(@{index}) {
     background-color: extract(@colorArr, @index);
   }
   //递归调用 达到循环目的
   .Loop(@index+1);
 }
-.Loop(0);
+.Loop(1);
 
 .changeColor {
   height: 100%;
