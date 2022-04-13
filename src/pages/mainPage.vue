@@ -32,6 +32,8 @@
     </piano-piece>
     <phone-camera></phone-camera>
     <night-mode></night-mode>
+    <cinematic-scroll></cinematic-scroll>
+    <camera-parameters></camera-parameters>
   </div>
 </template>
 
@@ -56,6 +58,10 @@ import largeColor from '@/components/pianoPiecePart/largeColor'
 import phoneCamera from '@/components/phoneCamera'
 // 夜间模式特性
 import nightMode from '@/components/nightMode'
+// 电影效果
+import cinematicScroll from '@/components/cinematicScroll'
+// 摄像头详细参数
+import cameraParameters from '@/components/cameraParameters'
 export default {
   components: {
     navItem,
@@ -67,7 +73,9 @@ export default {
     changeColor,
     largeColor,
     phoneCamera,
-    nightMode
+    nightMode,
+    cinematicScroll,
+    cameraParameters
   }
 }
 </script>
