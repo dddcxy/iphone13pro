@@ -1,5 +1,5 @@
 <template>
-  <div class="wallFlash">
+  <div class="wallFlash" ref="wallFlash">
     <article class="video-describe">
       <span
         v-for="(item,index) in videoDes"
@@ -37,9 +37,6 @@ export default {
   mounted () {
     window.addEventListener('scroll', this.handleScroll, true)
   },
-  beforeDestroy () {
-    window.removeEventListener('scroll', this.handleScroll)
-  },
   methods: {
     handleScroll () {
       for (let index = 0; index < this.videoDes.length; index++) {
@@ -48,6 +45,11 @@ export default {
         if (percent <= 0.4) {
           this.curIndex = index + 1
         }
+      }
+
+      let percent1 = toTopLength('wallFlash', this)
+      if (percent1 <= -1) {
+        window.removeEventListener('scroll', this.handleScroll, true)
       }
     }
   }
